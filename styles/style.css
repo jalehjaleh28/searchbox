@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); 
+    src: url('webfont.ttf')  format('truetype'), 
+         url('webfont.woff2') format('woff2'), 
+         url('webfont.woff') format('woff'); 
+  }
+*{
+    margin: 0;
+    padding: 0;
+  
+   
+  }
+body{
+
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:linear-gradient(30deg, red, rgb(255, 217, 0));
+}
+.search{
+    height: 150px;
+    display: flex;
+}
+.search .input{
+   height: 50px;
+   width: 0;
+   border: none;
+   box-sizing: border-box;
+   transition: width .5s ;
+   border: none;
+ 
+   
+}
+
+ .search .btn{
+  height: 50px;
+  width: 50px;
+  border: none;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  padding: 15px;
+
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.search.active .input{
+    width: 300px;
+    padding: 10px;
+   
+}
